@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-blue: #2c2c2f;
+  --light-grey: #e5e4e2;
+  --off-white: #f9f8f6;
+  --golden-yellow: #54a393;
+  --yellow: #ffcc4c;
+  --gold: #f6b24d;
+  --orange: #ffac33;
+  --dark-orange: #f89808;
+  --black: #000;
+}
+
+body {
+  background-color: var(--dark-blue);
+}
+.footer-text {
+    color: white;
+    text-align: center;
+    font-size: 2rem; /* Adjust font size as needed */
+    font-weight: bold;
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+   /* Background color of the footer */
+    padding: 10px 0; /* Adjust padding as needed */
+    margin: 0; /* Remove default margin */
+}
+
+.addendum {
+	color: white;
+	font-size: 1.5rem;
+}
+#lastModified {
+    color: white;
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+}
+
+
+.main-title {
+  text-align: center;
+  color: var(--light-grey);
+  margin: 20px 0;
+}
+
+.selections-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 1000px;
+ 
+  background-color: var(--off-white);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  font-size: 1.6rem; /* Adjust font size for input fields */
+  padding: 10px; /* Increase padding to create more space inside the input fields */
+}
+.dropdown {
+  margin: 10px auto 20px;
+  width: 200px;
+  
+}
+
+.dropdown-text {
+  text-align: center;
+  height: auto;
+  width: auto;
+  font-size: 1.6rem;
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+  width: 300px;
+  color: var(--black);
+  background-color: var(--gold);
+  background-image: linear-gradient(var(--golden-yellow), var(--orange));
+  border-color: var(--gold);
+  border-width: 3px;
+  font-size: 1.9rem;
+  margin: 25px auto;
+}
+
+.btn:hover {
+  background-image: linear-gradient(var(--yellow), var(--dark-orange));
+}
+
+#madlib-text {
+  color: var(--off-white);
+  font-size: 1.9rem;
+  text-align: center;
+}

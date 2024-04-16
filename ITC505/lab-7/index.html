@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Mad Lib</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <h1 class="main-title">Enjoy with Mad Libs!</h1>
+  <main>
+    <div class="selections-container">
+      <label class="dropdown-text" for="noun-input">Enter a noun:</label>
+      <input type="text" id="noun-input" placeholder="Enter a noun Here">
+      <label class="dropdown-text" for="verb-input">Enter a verb:</label>
+      <input type="text" id="verb-input" placeholder="Enter a verb Here">
+      <label class="dropdown-text" for="adjective-input">Enter an adjective:</label>
+      <input type="text" id="adjective-input" placeholder="Enter an adjective Here">
+      <label class="dropdown-text" for="location-input">Enter a location:</label>
+      <input type="text" id="location-input" placeholder="Enter a location Here">
+      <label class="dropdown-text" for="food-input">Enter a food item:</label>
+      <input type="text" id="food-input" placeholder="Enter a food item Here">
+    </div>
+    <button class="btn" id="generate-madlib-btn">Generate Mad Lib</button>
+    <p id="madlib-text"></p>
+  </main>
+ <div class="addendum">
+      <h2>Addendum</h2>
+    
+      <ul>
+        <li>
+          <strong>Variables Initialization: </strong> Declares variables to store inputs and the result of the Mad Lib story.
+        </li>
+        <li>
+          <strong>Event Listeners: </strong>  Listens for input events on each input field and updates the corresponding variable with the input value.
+        </li>
+		<li>
+          <strong>Reset Function: </strong> Resets all input values and variables to undefined.</li>
+		<li>
+          <strong>Generate Mad Lib Button Click Event:  </strong>  Generates a random Mad Lib story from a predefined array. Checks if any input field is empty and alerts the user if so. Displays the generated Mad Lib story in the designated HTML element and resets the input values and variables.  </li>
+      </ul>
+    </div>
+<script src="script.js"></script>
+ <footer>
+        <p class="footer-text">Last updated: 
+           <span id="lastModified"></span>
+        </p>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
